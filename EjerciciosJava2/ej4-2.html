@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Script</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        let cuenta;
+        let nombre;
+        let saldo;
+        saldo = 0;
+        let acreedor
+        acreedor = 0;
+        do {
+            cuenta = parseInt(prompt('Ingrese su numero de cuenta:'));
+            if (cuenta >= 0) {
+                nombre = prompt('Ingrese el nombre del cliente:');
+                saldo = parseFloat(prompt('Ingrese su saldo actual:'));
+                if (saldo > 0) {
+                    acreedor = acreedor + saldo;
+                    document.write(nombre + ' es acreedor'+'<br>');
+                } else {
+                    if (saldo < 0) {
+                        document.write(nombre + ' es deudor'+'<br>');
+                    } else {
+                        document.write(nombre + ' es nulo'+'<br>');
+                    }
+                }
+
+            }
+        } while (cuenta > 0);
+        document.write('Saldos acreedores:' + acreedor);
+    </script>
+</body>
+</html>

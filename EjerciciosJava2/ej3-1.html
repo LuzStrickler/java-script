@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Script</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        let valor = 0; 
+        let notasmas7 = 0;
+        let notasmenos7 = 0;
+        while (valor < 10) {
+            let nota;
+            nota = parseInt(prompt('Ingrese la nota:'));
+            if (nota >= 7) {
+                notasmas7 = notasmas7 + 1;
+            } else {
+                notasmenos7 = notasmenos7 + 1;
+            }
+            valor = valor + 1;
+        }
+        document.write('Los alumnos con notas mayores o iguales a 7 son:' + notasmas7 + '<br>');
+        document.write('Los alumnos con notas menores a 7:' + notasmenos7);
+    </script>
+</body>
+</html>

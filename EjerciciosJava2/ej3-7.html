@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Script</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        let pares;
+        pares = 0;
+        let impares;
+        impares = 0;
+        let num;
+        num = 0;
+        let valor;
+
+        while (num < 5) {
+            valor = parseInt(prompt('Ingrese un valor:'));
+            if (valor % 2 == 0) {
+                pares = pares + 1;
+            } else {
+                impares = impares + 1;
+            }
+            num = num + 1;
+        }
+        document.write('Los pares son:' + pares + '<br>');
+        document.write('Los impares son:' + impares);
+    </script>
+</body>
+</html>

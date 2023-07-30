@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <script>
+        let negativos;
+        negativos = 0;
+        let positivos;
+        positivos = 0;
+        let multiplos;
+        multiplos = 0;
+        let pares;
+        pares = 0;
+        for (let valor = 1; valor <= 10; valor++) {
+            let numero = parseInt(prompt('Ingrese un numero:'));
+            if (numero < 0) {
+                negativos++;
+            } else {
+                if (numero > 0) {
+                    positivos++;
+                }
+            }
+            if (numero % 2 == 0) {
+                pares = pares + numero;
+            }
+            if (numero % 15 == 0 && numero != 0) {
+                multiplos++;
+            }
+        }
+        document.write('Numeros negativos:' + negativos + '<br>');
+        document.write('Numeros positivos:' + positivos + '<br>');
+        document.write('Suma de los numeros pares:' + pares + '<br>');
+        document.write('Múltiplos de 15:' + multiplos + '<br>');
+    </script>
+</body>
+</html>

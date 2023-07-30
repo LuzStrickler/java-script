@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <script>
+        let palabra;
+        palabra=prompt('Ingrese alguna de las siguientes palabras: casa, mesa, perro o gato: ')
+
+        switch (palabra){
+            case 'casa':
+                document.write('La traduccion al ingles es HOUSE')
+                break;
+            case 'mesa':
+                document.write('La traduccion al ingles es TABLE')
+                break;
+            case 'perro':
+                document.write('La traduccion al ingles es DOG')
+                break;
+            case 'gato':
+                document.write('La traduccion al ingles es CAT')
+                break;
+            default:
+                document.write('Solo debe ingresar las palabras permitidas (casa, mesa, perro o gato)')
+                break;
+        }
+
+    </script>
+</body>
+</html>

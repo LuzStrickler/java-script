@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <script>
+        let equilatero;
+        equilatero = 0;
+        let isosceles;
+        isosceles= 0;
+        let escaleno;
+        escaleno = 0;
+        for (let valor = 1; valor <= 4; valor++) {
+            let lado1;
+            lado1 = parseInt(prompt('Ingrese primer lado del triangulo:'));
+            let lado2;
+            lado2 = parseInt(prompt('Ingrese segundo lado del trinagulo:'));
+            let lado3;
+            lado3 = parseInt(prompt('Ingrese tercer lado del triangulo:'));
+            if (lado1 == lado2 && lado1 == lado3) {
+                document.write('El triangulo es equilatero'+'<br>');
+                equilatero++;
+            } else {
+                if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+                    document.write('El triangulo es isósceles'+'<br>');
+                    isosceles++;
+                } else {
+                    document.write('El triangulo es escaleno'+'<br>');
+                    escaleno++;
+                }
+            }
+        }
+        document.write('<br>');
+        document.write('Triángulos equiláteros:' + equilatero + '<br>');
+        document.write('Triángulos isósceles:' + isosceles + '<br>');
+        document.write('Triángulos escalenos:' + escaleno + '<br>');
+        if (equilatero < isosceles && equilatero < escaleno) {
+            document.write('Hay menos triángulos equiláteros');
+        } else {
+            if (isosceles < escaleno) {
+                document.write('Hay menos triángulos isósceles');
+            } else {
+                document.write('Hay menos triángulos escalenos');
+            }
+        }
+    </script>
+</body>
+</html>

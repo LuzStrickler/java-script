@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Script</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        let valor = 0;
+        let total = 0;
+        let sueldo;
+        let menos300 = 0;
+        let mas300 = 0;
+        while (valor < 5) {
+            sueldo = parseInt(prompt('Ingrese el sueldo;'));
+            if (sueldo <= 300) {
+                menos300 = menos300+ 1;
+            } else {
+                mas300 = mas300 + 1;
+            }
+            total = total + sueldo;
+            valor = valor + 1;
+        }
+        document.write('Los que cobran 300 o menos son:' + menos300 + '<br>');
+        document.write('Los que cobran más de 300:' + mas300 + '<br>');
+        document.write('El total de la empresa es:' + total);
+    </script>
+</body>
+</html>

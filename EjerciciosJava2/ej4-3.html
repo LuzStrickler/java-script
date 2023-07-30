@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Script</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        let total;
+        total= 0;
+        let varones;
+        personas = 0;
+        let mujeres;
+        mujeres= 0;
+        let grandes;
+        grandes= 0;
+        do {
+            let dni;
+            dni = parseInt(prompt('Ingrese su numero de documento:'));
+            if (dni > 0) {
+                let edad;
+                edad = parseInt(prompt('Ingrese su edad:'));
+                sexo = prompt('Ingrese su sexo:');
+                if (sexo == 'masculino') {
+                    varones = varones + 1;
+                    if (edad >= 16 && edad <= 65) {
+                        grandes = grandes + 1;
+                    }
+                }
+                if (sexo == 'femenino') {
+                    mujeres = mujeres + 1;
+                }
+                total = total + 1;
+            }
+        } while (dni != 0);
+        document.write('Total: ' + total + '<br>');
+        document.write('Varones: ' + varones + '<br>');
+        document.write('Mujeres: ' + mujeres + '<br>');
+        document.write('Varones entre 16 y 65 años: ' + grandes);
+    </script>
+
+</body>
+
+</html>

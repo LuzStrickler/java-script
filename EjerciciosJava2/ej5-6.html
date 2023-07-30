@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <script>
+        let cuadrante1; 
+        cuadrante1 = 0;
+        let cuadrante2;
+        cuadrante2 = 0;
+        let cuadrante3;
+        cuadrante3 = 0;
+        let cuadrante4;
+        cuadrante4 = 0;
+        let cantidadpuntos;
+        cantidadpuntos = parseInt(prompt('Cantidad de puntos:'));
+        cantidadpuntos = parseInt(cantidadpuntos);
+        for (let valor = 1; valor <= cant; valor++) {
+            let x;
+            x = parseInt(prompt('Ingrese la coordenada x:'));
+            let y;
+            y = parseInt(prompt('Ingrese la coordenada y:'));
+            if (x > 0 && y > 0) {
+                cuadrante1++;
+            } else {
+                if (x < 0 && y > 0) {
+                    cuadrante2++;
+                } else {
+                    if (x < 0 && y < 0) {
+                        cuadrante3++;
+                    } else {
+                        if (x > 0 && y < 0) {
+                            cuadrante4++;
+                        }
+                    }
+                }
+            }
+        }
+        document.write('Puntos en el primer cuadrante:' + cuadrante1 + '<br>');
+        document.write('Puntos en el segundo cuadrante:' + cuadrante2 + '<br>');
+        document.write('Puntos en el tercer cuadrante:' + cuadrante3 + '<br>');
+        document.write('Puntos en el cuarto cuadrante:' + cuadrante4 + '<br>');
+    </script>
+</body>
+</html>

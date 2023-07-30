@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <script>
+        let triangulosmas12;
+        triangulos=0;
+        let base;
+        let altura;
+        let superficie;
+
+        for (let ingreso=1; ingreso<=3; ingreso++){
+            base=parseInt(prompt('Ingrese la medida de la base del triangulo:'));
+            altura=parseInt(prompt('Ingrese la medida de la altura del triangulo:'))
+            superficie=(base*altura)/2
+            document.write('El triangulo '+ingreso+'tiene una base de: '+base+'y una altura de:'+altura +'formando una superficie de: '+superficie +'<br>')
+            if (superficie>=12){
+                triangulosmas12=triangulosmas12+1
+            }
+            document.write('Los triangulos con una superficie mayor a 12 son: '+ triangulosmas12)
+        }
+    </script>
+</body>
+</html>

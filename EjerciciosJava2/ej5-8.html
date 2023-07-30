@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <script>
+        let suma1;
+        suma1 = 0;
+        let suma2;
+        suma2=0;
+        let suma3;
+        suma3 = 0;
+
+        for (let valor = 1; valor <= 5; valor++) {
+            let edad1;
+            edad1 = parseInt(prompt('Ingrese la edad del estudiante del turno mañana:'));
+            suma1 = suma1 + edad1;
+        }
+        for (let valor = 1; valor <= 6; valor++) {
+            let edad2;
+            edad2 = parseInt(prompt('Ingrese la edad del estudiante del turno tarde:'));
+            suma2 = suma2 + edad2;
+        }
+        for (let valor = 1; valor <= 11; valor++) {
+            let edad3;
+            edad3 = parseInt(prompt('Ingrese la edad del estudiante del turno noche:'));
+            suma3 = suma3 + edad3;
+        }
+        let promedio1;
+        promedio1 = suma1 / 5;
+        let promedio2;
+        promedio2 = suma2 / 6;
+        let promedio3;
+        promedio3 = suma3 / 11;
+
+        document.write('Promedio de edades del turno mañana:' + promedio1 + '<br>');
+        document.write('Promedio de edades del turno tarde:' + promedio2 + '<br>');
+        document.write('Promedio de edades del turno noche:' + promedio3 + '<br>');
+
+        if (promedio1 > promedio2 && promedio1 > promedio3) {
+            document.write('El turno mañana tiene un promedio mayor');
+        } else {
+            if (promedio2 > promedio3) {
+                document.write('El turno tarde tiene un promedio mayor');
+            } else {
+                document.write('El turno noche tiene un promedio mayor');
+            }
+        }
+    </script>
+</body>
+</html>
