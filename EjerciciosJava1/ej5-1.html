@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <script>
+        let nota1;
+        let nota2;
+        let nota3;
+
+        nota1=parseInt(prompt('Ingrese la nota 1:'))
+        nota2=parseInt(prompt('Ingrese la nota 2:'))
+        nota3=parseInt(prompt('Ingrese la nota 3:'))
+
+        let suma=parseInt(nota1)+parseInt(nota2)+parseInt(nota3);
+        let promedio=parseInt(suma)/3;
+        document.write('El promedio es '+ promedio)
+        document.write('<br>');
+
+        if (promedio>=6) {
+            document.write('Tiene la materia aprobada con un promedio de ' + promedio);
+        }
+    
+    </script>
+</body>
+</html>
